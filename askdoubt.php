@@ -107,7 +107,7 @@ form {
                     $question = $_POST['question'];
                     $stusername = $_SESSION["username"];
                     
-                    $sql="SELECT * FROM professor WHERE coursename='$coursenamestu'";
+                    $sql="SELECT * FROM student WHERE coursenamestu='$coursenamestu' AND stusername='$stusername'";
                     $result = $mysqli->query($sql);
                     if($result->num_rows==1){
 
