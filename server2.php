@@ -55,7 +55,7 @@ session_start();
          mysqli_query($conn,$sql);
          $_SESSION["username"] = $username;
          $_SESSION["success"] = "You are loggen in";
-         header('location: welcomeprof.php');
+       echo "<script>alert('Successfully registered login for better experience');document.location.href='loginprof.php';</script>";
      }
 }
 
