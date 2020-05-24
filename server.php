@@ -55,7 +55,7 @@
          mysqli_query($conn,$sql);
          $_SESSION["username"] = $username;
          $_SESSION["success"] = "You are loggen in";
- echo "<script>alert('Feedback given successfully');document.location.href='yourcoursesstu.php';</script>";
+       echo "<script>alert('Successfully registered login for better experience');document.location.href='loginstu.php';</script>";
      }
 }
 
